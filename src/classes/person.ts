@@ -15,4 +15,12 @@ export class Person {
 	public getNametagText = () => {
 		return `Hello, my name is ${this.getFullName()}`;
 	};
+
+	public getNametagHtml = () => {
+		return /*html*/ `
+		<div class="bg-slate-900 mt-3 w-[25rem] flex justify-center p-4">
+			<div>${this.getFullName()}</div>
+		</div>	
+		`;
+	};
 }

@@ -12,5 +12,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 		<li>${person1.getNametagText()}</li>
 		<li>${person2.getNametagText()}</li>
 	</ul>
+	<h2 class="text-2xl mt-4 text-yellow-300">Nametags</h2>
+		${person1.getNametagHtml()}
+		${person2.getNametagHtml()}
 </div>
 `;
