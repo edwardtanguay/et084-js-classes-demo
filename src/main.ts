@@ -4,6 +4,7 @@ import './style.css';
 
 const person1 = new Customer('Janice', 'Schmidt');
 const person2 = new Employee('Robert', 'Wheyton');
+const person3 = new Employee('Roget', 'Merket');
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <div>
@@ -12,9 +13,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<ul>
 		<li>${person1.getNametagText()}</li>
 		<li>${person2.getNametagText()}</li>
+		<li>${person3.getNametagText()}</li>
 	</ul>
 	<h2 class="text-2xl mt-4 text-yellow-300">Nametags</h2>
 		${person1.getNametagHtml()}
 		${person2.getNametagHtml()}
+		${person3.getNametagHtml()}
 </div>
 `;
