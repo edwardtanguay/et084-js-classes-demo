@@ -1,9 +1,10 @@
-import { Person } from './classes/person';
+import { Customer } from './classes/customer';
+import { Employee } from './classes/employee';
 import './style.css';
 
-const person1 = new Person('Janice', 'Schmidt');
-const person2 = new Person('Robert', 'Wheyton');
-console.log(this)
+const person1 = new Customer('Janice', 'Schmidt');
+const person2 = new Employee('Robert', 'Wheyton');
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <div>
 	<h1 class="text-3xl">Conference Site</h1>	
